@@ -1,0 +1,31 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 公告详情_私有css文件*/
+.v1p0_ggxq_body{
+  .mainBox{
+    &{
+      padding:0.23rem 7% 30px 7%;
+    }
+    .title{
+      font-size:16px;
+      font-weight:700;
+      line-height: 22px;
+    }
+    .time_p{
+      color: #909090;
+      font-size:12px;
+      margin: 15px 0px
+    }
+    .detail_cont{
+      &{
+        color: #000;
+        font-size:14px;
+      }
+      p{
+        margin-top:27px;
+      }
+      p:first-child{
+        margin-top:0px;
+      }
+    }
+  }
+}
