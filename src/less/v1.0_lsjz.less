@@ -1,0 +1,64 @@
+@import "reuseClass.less";//引入less重用class样式
+/* 历史净值_私有css文件*/
+.lsjz_v1p0_body{
+  &{
+    background-color: #EFEFF4;
+  }
+  .mainBox{
+    padding-bottom:30px;
+  }
+  //flex布局，左右padding值
+  .reuseClass01(){
+    display: flex;
+    padding: 0px 10px;
+  }
+  .header{
+    &{
+      background-color: #F7F6F5;
+      .reuseClass01();
+    }
+    span{
+      &{
+        flex:1;
+        .h_line_h(30px);
+        color: #909090;
+        font-size:12px;
+        text-align: right;
+      }
+      &:first-child{
+        text-align: left;
+      }
+    }
+  }
+  .list_ul{
+    &{
+      background-color: #fff;
+    }
+    li{
+      &{
+        border-bottom: 1px solid #DDDDDD;
+        .reuseClass01();
+      }
+      span{
+        &{
+          flex:1;
+          .h_line_h(50px);
+          font-size:14px;
+          text-align: right;
+          color: #000;
+          font-weight: 600;
+        }
+        &:first-child{
+          text-align: left;
+        }
+        &.span_red{
+          color: #EE4634;
+        }
+        &.span_green{
+          color: #81CA9C;
+        }
+      }
+    }
+
+  }
+}

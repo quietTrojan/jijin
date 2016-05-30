@@ -1,0 +1,57 @@
+/* 历史净值_私有css文件*/
+.lsjz_v1p0_body {
+  background-color: #EFEFF4;
+}
+.lsjz_v1p0_body .mainBox {
+  padding-bottom: 30px;
+}
+.lsjz_v1p0_body .header {
+  background-color: #F7F6F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 10px;
+}
+.lsjz_v1p0_body .header span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 30px;
+  line-height: 30px;
+  color: #909090;
+  font-size: 12px;
+  text-align: right;
+}
+.lsjz_v1p0_body .header span:first-child {
+  text-align: left;
+}
+.lsjz_v1p0_body .list_ul {
+  background-color: #fff;
+}
+.lsjz_v1p0_body .list_ul li {
+  border-bottom: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 10px;
+}
+.lsjz_v1p0_body .list_ul li span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: right;
+  color: #000;
+  font-weight: 600;
+}
+.lsjz_v1p0_body .list_ul li span:first-child {
+  text-align: left;
+}
+.lsjz_v1p0_body .list_ul li span.span_red {
+  color: #EE4634;
+}
+.lsjz_v1p0_body .list_ul li span.span_green {
+  color: #81CA9C;
+}
