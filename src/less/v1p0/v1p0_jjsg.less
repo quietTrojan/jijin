@@ -1,0 +1,310 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 基金申购_私有css文件*/
+.v1p0_jjsg_body{
+  &{
+    background-color: #EFEFF4;
+  }
+  .mainBox{
+
+  }
+  .payWrap{
+    &{
+      background-color: #fff;
+      padding:0px 3%;
+      margin-top: 20px;
+    }
+    >div{
+      padding-left:5px;
+      padding-right:5px;
+    }
+    .moneyWrap {
+      &{
+        border-bottom: 1px solid #D9D9D9;
+        display: flex;
+        padding-top:15px;
+        padding-bottom:15px;
+      }
+      label{
+        flex-basis: 30px;
+        font-size:26px;
+        color: #000;
+        box-sizing: border-box;
+        padding-left:5px;
+        .h_line_h(40px);
+      }
+      .moneyInput{
+        &{
+          flex: 1;
+          font-size:20px;
+          height: 40px;
+          box-sizing: border-box;
+          line-height: 32px;
+          padding:4px 0px;
+        }
+        &::placeholder{
+          color: #CCCCCC;
+        }
+      }
+    }
+    .payBtnWrap{
+      &{
+        .h_line_h(28px);
+        padding-top:15px;
+        padding-bottom:15px;
+        border-bottom: 1px solid #D9D9D9;
+      }
+      .left_p{
+        &{
+          float:left;
+          color: #000;
+        }
+        a{
+          color: #86C1F0;
+        }
+      }
+      .payBtn{
+        float:right;
+        width:70px;
+        background-color: #EE4634;
+        border-radius:3px;
+        text-align: center;
+        font-size:16px;
+        color: #ffffff;
+      }
+    }
+    .rateWrap{
+      &{
+        .h_line_h(44px);
+      }
+      .left_p {
+        float: left;
+        color: #000;
+      }
+      .right_p{
+        &{
+          float:right;
+          padding-right:12px;
+          background:url("../../images/v1p0/link_right_bg.png") no-repeat right center;
+          background-size:auto 10px;
+        }
+        span:nth-of-type(1){
+          color: #909090;
+          text-decoration: line-through;
+        }
+        span:nth-of-type(2){
+          color: #FF9800;
+          margin-left:5px;
+        }
+      }
+    }
+  }
+  .inviteWrap{
+    &{
+      margin-top:20px;
+      padding: 0px 3%;
+      background-color: #fff;
+    }
+    .inviteInput{
+      &{
+        font-size:16px;
+        height: 44px;
+        line-height: 20px;
+        padding: 12px 5px;
+        display: block;
+        box-sizing: border-box;
+        width:100%;
+      }
+      &::placeholder{
+        color: #CCCCCC;
+      }
+    }
+  }
+  .protocolWrap{
+    &{
+      padding: 0px 3%;
+    }
+    .titleWrap{
+      &{
+        .h_line_h(20px);
+        padding: 18px 5px 10px 5px;
+        border-bottom: 1px solid #D9D9D9;
+      }
+      .left_p{
+        color: #909090;
+        float:left;
+      }
+      .status_span{
+        &{
+          box-sizing: border-box;
+          .w_h_val(20px);
+          border:1px solid #D9D9D9;
+          float:right;
+          border-radius:50%;
+          padding: 2px;
+        }
+        &.selected{
+          background-color: #75CCA9;
+          border-color: #75CCA9;
+          background-clip: content-box;
+        }
+      }
+    }
+    .protocolList{
+      &{
+        padding: 15px 5px 0px 5px;
+      }
+      li{
+        &{
+          margin-top:10px;
+          padding-left:10px;
+          position: relative;
+        }
+        &::before{
+          content: "";
+          .w_h_val(4px);
+          border-radius:50%;
+          background-color: #CCCCCC;
+          position: absolute;
+          left: 0px;
+          top:8px;
+        }
+        &:first-child{
+          margin-top:0px;
+        }
+        p{
+          &{
+            line-height: 20px;
+            color: #909090;
+          }
+          &.new::after{
+            content: "";
+            .w_h_val(6px);
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #EE4634;
+            vertical-align: top;
+            margin-top:2px;
+          }
+          a{
+            color: #8FC6F2;
+          }
+        }
+      }
+    }
+  }
+  .btnWrap{
+    &{
+      padding:0px 3%;
+      margin-top:85px;
+    }
+    .submitBtn{
+      &{
+        display: block;
+        width:100%;
+        height: 40px;
+        font-size:16px;
+        color: #ffffff;
+        background-color: #EE4634;
+        border-radius:3px;
+      }
+      &.disabled{
+        background-color:#D9D9D9;
+      }
+    }
+  }
+  .ratePopBox{
+    &{
+      position: fixed;
+      left: 7%;
+      width:86%;
+      top:50%;
+      margin-top: -175px;
+      background-color: #F5F5F5;
+      border-radius:3px;
+      z-index: 1001;
+      overflow-x: hidden;
+      display: none;
+    }
+    .title{
+      font-size:16px;
+      color: #000;
+      .h_line_h(50px);
+      text-align: center;
+      border-bottom:1px solid #CCCCCC;
+    }
+    .contBox{
+      &{
+        padding: 0px 7% 20px 7%;
+        text-align: center;
+      }
+      .header{
+        &{
+          display: flex;
+          padding: 25px 0px 10px 0px;
+        }
+        span{
+          flex: 1;
+        }
+      }
+      .rate_list_ul{
+        li{
+          &{
+            display: flex;
+            margin-top:1px;
+          }
+          &:first-child{
+            margin-top:0px;
+          }
+          p{
+            flex:1;
+            .h_line_h(44px);
+            background-color: #EBEBEB;
+            color: #000;
+          }
+          p:nth-of-type(2){
+            &{
+              margin-left:1px;
+              font-size:0px;
+            }
+            span{
+              &{
+                font-size:14px;
+              }
+              &:first-child{
+                color: #909090;
+                text-decoration: line-through;
+                margin-right:5px;
+              }
+              &:last-child{
+                color: #000;
+                text-decoration:none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBox{
+      &{
+        background-color: #fff;
+      }
+      input[type="button"]{
+        font-size:16px;
+        background-color:transparent;
+        height: 50px;
+        display: block;
+        width: 100%;
+        color: #909090;
+      }
+    }
+  }
+}
+/* 媒体查询 begin */
+@media screen and @iphone4Query {
+  .v1p0_jjsg_body{
+    .btnWrap{
+      margin-top:30px;
+    }
+  }
+}
+/* 媒体查询 end */
