@@ -1,0 +1,22 @@
+/* 协议通用样式_私有css文件*/
+.v1p0_xieyi_body .mainBox {
+  padding-bottom: 30px;
+}
+.v1p0_xieyi_body .title {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 20px 0px 15px 0px;
+}
+.v1p0_xieyi_body .cont {
+  padding: 0px 6% 0px  6% ;
+}
+.v1p0_xieyi_body .cont p {
+  line-height: 20px;
+  color: #909090;
+  text-indent: 25px;
+}
+/* 媒体查询 begin */
+/* 媒体查询 end */

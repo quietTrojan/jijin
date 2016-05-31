@@ -2,6 +2,9 @@
 .v1p0_jjsg_body {
   background-color: #EFEFF4;
 }
+.v1p0_jjsg_body .mainBox {
+  padding-bottom: 30px;
+}
 .v1p0_jjsg_body .payWrap {
   background-color: #fff;
   padding: 0px 3%;
