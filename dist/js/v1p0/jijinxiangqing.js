@@ -63,6 +63,24 @@ function createPieBox(){
                     y: 25
                 }
             ]
+            /*data: [
+                {
+                    name: "股票",
+                    y: 125
+                },
+                {
+                    name: "债券",
+                    y: 0
+                },
+                {
+                    name: "银行",
+                    y: 0
+                },
+                {
+                    name: "其它",
+                    y: 0
+                }
+            ]*/
         }]
     });
 }
