@@ -1,0 +1,36 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 基金申购_私有css文件*/
+.v1p0_jjjl_body{
+  &{
+    //background-color: #EFEFF4;
+  }
+  .mainBox{
+    padding: 23px 7% 30px 7%;
+  }
+  .cardItem{
+    &{
+      margin-top:40px;
+    }
+    &:first-child{
+      margin-top:0px;
+    }
+  }
+  .title_h3{
+    font-size:16px;
+    font-weight: bold;
+    color: #000;
+    .h_line_h(22px);
+    margin-bottom:15px;
+  }
+  .cardCont{
+    &{
+      color: #262626;
+      line-height: 21px;
+    }
+  }
+}
+/* 媒体查询 begin */
+@media screen and @iphone4Query {
+
+}
+/* 媒体查询 end */

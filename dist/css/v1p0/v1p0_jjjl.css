@@ -1,0 +1,24 @@
+/* 基金申购_私有css文件*/
+.v1p0_jjjl_body .mainBox {
+  padding: 23px 7% 30px 7%;
+}
+.v1p0_jjjl_body .cardItem {
+  margin-top: 40px;
+}
+.v1p0_jjjl_body .cardItem:first-child {
+  margin-top: 0px;
+}
+.v1p0_jjjl_body .title_h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.v1p0_jjjl_body .cardCont {
+  color: #262626;
+  line-height: 21px;
+}
+/* 媒体查询 begin */
+/* 媒体查询 end */
