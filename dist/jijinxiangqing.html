@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/v1p0/v1p0_jjxq.css">
+
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/highcharts.js"></script>
+    <script type="text/javascript" src="js/lib/base.js"></script>
+    <script type="text/javascript" src="js/v1p0/jijinxiangqing.js"></script>
+
+    <title>基金详情</title>
+</head>
+<body class="v1p0_jjxq_body">
+    <div class="mainBox">
+        <div class="dataInfor">
+            <div class="dataInforInner">
+                <div class="ftDiv">
+                    <label>日涨幅</label>
+                    <p>+0.31<span>%</span></p>
+                </div>
+                <div class="sepDiv"></div>
+                <div class="tdDiv">
+                    <label>单位净值</label>
+                    <p>2.2201</p>
+                </div>
+                <div class="frDiv">
+                    <label>申购费率</label>
+                    <p><span>0.6%</span><span>1.5%</span></p>
+                </div>
+            </div>
+            <p class="refreshTime">更新时间 05-18</p>
+        </div>
+        <div class="jjTypeBox clearfix">
+            <span class="mixed">混合型基金</span>
+            <span class="highRisk">高风险</span>
+        </div>
+        <div class="conditionAsk">
+            <span>投资人条件</span>
+            <span>风险承受能力“安全型”及以上</span>
+        </div>
+        <div class="chartWrap">
+            <div class="title"><span>近一个月的涨幅</span><span>+3.09%</span></div>
+            <div class="trendBox" id="trendBox">
+            </div>
+            <div class="tabBtnBox" id="tabBtnBox">
+                <a href="javascript:;" class="active">一个月</a>
+                <a href="javascript:;">三个月</a>
+                <a href="javascript:;">半年</a>
+                <a href="javascript:;">一年</a>
+            </div>
+            <a href="javascript:;" class="lsjz_link">
+                <span>查看历史净值</span>
+            </a>
+        </div>
+        <div class="jjTabWrap">
+            <ul class="tabHeader" id="tabHeader">
+                <li class="active">概况</li>
+                <li data-pie-isinit="false">重仓</li>
+                <li>公告</li>
+                <li>分红</li>
+            </ul>
+            <div class="tabContWrap" id="tabContWrap">
+                <div class="tabContItem">
+                    <ul class="gk_ul">
+                        <li>
+                            <a href="javascript:;">
+                                <span>基金经理</span>
+                                <span>刘士余、王靖</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span>基金公司</span>
+                            <span>北信投资公司</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>基金投资范围</span>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <span>成立日期</span>
+                            <span>2014年09月19日</span>
+                        </li>
+                        <li>
+                            <span>托管人名称</span>
+                            <span>招商银行</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabContItem">
+                    <div class="chongcangBox">
+                        <div class="pieWrap">
+                            <div class="leftBox">
+                                <div></div>
+                                <div class="pieBox" id="pieBox"></div>
+                                <div></div>
+                            </div>
+                            <ul class="pieUl">
+                                <li><span>25%</span><span>股票</span></li>
+                                <li><span>10%</span><span>债券</span></li>
+                                <li><span>40%</span><span>银行</span></li>
+                                <li><span>25%</span><span>其它</span></li>
+                            </ul>
+                        </div>
+                        <div class="dataListWrap">
+                            <div class="dataListHeader">
+                                <span>名称</span>
+                                <span>代码</span>
+                                <span>市值(万元)</span>
+                                <span>资产比例</span>
+                            </div>
+                            <ul class="dataList_ul">
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContItem">
+                    <div class="tabCont_noticeBox">
+                        <a href="javascript:;" class="noticeItem">
+                            <p>独立董事关于发行股份及支付现金购买资产并募集配套资金暨关联交易事项的独立意见</p>
+                            <p>2016-05-17 09:00</p>
+                        </a>
+                        <a href="javascript:;" class="noticeItem">
+                            <p>独立董事关于发行股份及支付现金购买资产并募集</p>
+                            <p>2016-05-17 09:00</p>
+                        </a>
+                        <a href="javascript:;" class="noticeItem">
+                            <p>泰信400A：可能发生不定期份额折算的第二十八次风险提示公告</p>
+                            <p>2016-05-17 09:00</p>
+                        </a>
+                        <a href="javascript:;" class="noticeItem">
+                            <p>可能发生不定期份额折算的风险提示公告</p>
+                            <p>2016-05-17 09:00</p>
+                        </a>
+                        <a href="javascript:;" class="noticeItem">
+                            <p>基金份额发售公告</p>
+                            <p>2016-05-17 09:00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="tabContItem">
+                    <div class="tabCont_fenhongBox">
+                        <div class="item">
+                            <p>每10份派送0.82元</p>
+                            <p><span>分红日:2015-02-02</span><span>派息日:2015-02-02</span></p>
+                        </div>
+                        <div class="item">
+                            <p>每10份派送0.82元</p>
+                            <p><span>分红日:2015-02-02</span><span>派息日:2015-02-02</span></p>
+                        </div>
+                        <div class="item">
+                            <p>每10份派送0.82元</p>
+                            <p><span>拆分日:2015-02-02</span></p>
+                        </div>
+                        <div class="item">
+                            <p>拆分比例1：1.23456</p>
+                            <p><span>分红日:2015-02-02</span><span>派息日:2015-02-02</span></p>
+                        </div>
+                        <div class="item">
+                            <p>拆分比例1：1.23456</p>
+                            <p><span>分红日:2015-02-02</span><span>派息日:2015-02-02</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jjProtocolBox">
+            <p>基金销售服务由深圳宜投基金销售有限公司提供</p>
+            <p>
+                <a href="javascript:;">《投资人风险提示》</a><a href="javascript:;">《网信理财基金平台服务协议》</a>
+            </p>
+        </div>
+    </div>
+    <div class="ljsg_btnBox">
+        <input type="button" value="立即申购"/>
+    </div>
+</body>
+</html>
