@@ -2,9 +2,6 @@
 .v1p0_jjxq_body {
   background-color: #EFEFF4;
 }
-.v1p0_jjxq_body .mainBox {
-  padding-bottom: 50px;
-}
 .v1p0_jjxq_body .dataInfor {
   background-color: #fff;
   padding: 10px 15px 0px 15px;
@@ -136,6 +133,7 @@
 .v1p0_jjxq_body .chartWrap {
   background-color: #fff;
   margin-top: 10px;
+  padding-bottom: 12px;
 }
 .v1p0_jjxq_body .chartWrap .title {
   padding-right: 15px;
@@ -144,6 +142,12 @@
   line-height: 20px;
   padding-top: 5px;
   font-size: 0px;
+}
+.v1p0_jjxq_body .chartWrap .title > div {
+  display: none;
+}
+.v1p0_jjxq_body .chartWrap .title > div:first-child {
+  display: block;
 }
 .v1p0_jjxq_body .chartWrap .title > * {
   display: inline-block;
@@ -162,6 +166,17 @@
 .v1p0_jjxq_body .chartWrap .trendBox {
   height: 200px;
   padding-right: 10px;
+}
+.v1p0_jjxq_body .chartWrap .xAxisBox {
+  font-size: 12px;
+  color: #909090;
+  padding: 0px 10px 5px 40px;
+}
+.v1p0_jjxq_body .chartWrap .xAxisBox span:nth-of-type(1) {
+  float: left;
+}
+.v1p0_jjxq_body .chartWrap .xAxisBox span:nth-of-type(2) {
+  float: right;
 }
 .v1p0_jjxq_body .chartWrap .tabBtnBox {
   display: -webkit-box;
@@ -193,7 +208,9 @@
   color: #8FC6F2;
   display: block;
   text-align: center;
-  padding: 12px 0px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 12px;
 }
 .v1p0_jjxq_body .chartWrap .lsjz_link span {
   display: inline-block;
@@ -326,9 +343,13 @@
   padding-left: 15px;
   position: relative;
   margin-top: 15px;
+  font-size: 0px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .pieWrap .pieUl li:first-child {
   margin-top: 7px;
+}
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .pieWrap .pieUl li span {
+  font-size: 14px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .pieWrap .pieUl li span:nth-of-type(1) {
   margin-right: 10px;
@@ -369,6 +390,9 @@
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .pieWrap .pieUl li:nth-of-type(4) span:first-child {
   color: #FFDC84;
 }
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap {
+  border-top: 10px solid #EFEFF4;
+}
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .reuseClass01 {
   text-align: right;
 }
@@ -392,6 +416,12 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .title {
+  height: 36px;
+  line-height: 36px;
+  color: #000;
+  padding-left: 15px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataListHeader {
   height: 30px;
@@ -463,6 +493,25 @@
       -ms-flex: 2;
           flex: 2;
 }
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .emptyBox {
+  height: 140px;
+  box-sizing: border-box;
+  padding-top: 37px;
+}
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .emptyBox i {
+  display: block;
+  margin: 0px auto;
+  width: 36px;
+  height: 40px;
+  background: url("../../images/v1p0/empty_Icon01.png") 0px 0px no-repeat;
+  background-size: 100% 100%;
+}
+.v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .emptyBox p {
+  font-size: 14px;
+  color: #909090;
+  text-align: center;
+  padding-top: 12px;
+}
 .v1p0_jjxq_body .tabCont_noticeBox {
   padding: 17px 15px 12px 15px;
 }
@@ -511,7 +560,7 @@
 .v1p0_jjxq_body .jjProtocolBox {
   font-size: 12px;
   text-align: center;
-  padding: 10px 0px;
+  padding: 20px 0px 10px 0px;
 }
 .v1p0_jjxq_body .jjProtocolBox p {
   height: 16px;
@@ -522,25 +571,6 @@
 }
 .v1p0_jjxq_body .jjProtocolBox p a {
   color: #8FC6F2;
-}
-.v1p0_jjxq_body .ljsg_btnBox {
-  background-color: #fff;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  z-index: 2;
-  padding: 5px 0px;
-}
-.v1p0_jjxq_body .ljsg_btnBox input[type="button"] {
-  height: 40px;
-  width: 94%;
-  display: block;
-  margin: 0px auto;
-  background-color: #EE4634;
-  font-size: 16px;
-  color: #ffffff;
-  border-radius: 3px;
 }
 /* 媒体查询 begin */
 /* 媒体查询 end */

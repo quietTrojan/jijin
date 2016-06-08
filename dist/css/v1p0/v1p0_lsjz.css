@@ -2,9 +2,6 @@
 .v1p0_lsjz_body {
   background-color: #EFEFF4;
 }
-.v1p0_lsjz_body .mainBox {
-  padding-bottom: 30px;
-}
 .v1p0_lsjz_body .header {
   background-color: #F7F6F5;
   display: -webkit-box;
@@ -54,4 +51,47 @@
 }
 .v1p0_lsjz_body .list_ul li span.span_green {
   color: #81CA9C;
+}
+.v1p0_lsjz_body .emptyBox {
+  margin-top: 77px;
+}
+.v1p0_lsjz_body .emptyBox i {
+  display: block;
+  margin: 0px auto;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/v1p0/empty_Icon.png") no-repeat;
+  background-size: 100% 100%;
+}
+.v1p0_lsjz_body .emptyBox p {
+  font-size: 14px;
+  color: #909090;
+  text-align: center;
+  padding-top: 16px;
+}
+.v1p0_lsjz_body .tip_p {
+  font-size: 12px;
+  color: #CCCCCC;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  padding: 5px 0px 20px 0px;
+}
+.v1p0_lsjz_body .tip_p.fixedBottom {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.v1p0_lsjz_body .loadLink {
+  height: 40px;
+  line-height: 40px;
+  background-color: #F6F6F6;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+}
+.v1p0_lsjz_body .loadLink.noMore {
+  color: #909090;
 }

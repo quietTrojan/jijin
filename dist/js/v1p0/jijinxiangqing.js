@@ -87,8 +87,9 @@ function createPieBox(){
 $(function(){
     $('#trendBox').highcharts({
         chart: {
-           /* spacing:0,
-            margin:0,*/
+            spacingRight:0,
+            spacingBottom:0,
+            marginBottom:10,
             backgroundColor:'rgba(255,255,255,0)',
             animation:false
         },
@@ -102,17 +103,7 @@ $(function(){
             lineWidth:0,
             tickWidth:0,
             labels: {
-                style: {
-                    color: '#A5AFB3'
-                },
-                staggerLines: 1,
-                align: 'center',
-                formatter:function(){
-                    /*if(this.isFirst  || this.isLast){
-                        return this.value;
-                    }*/
-                    return this.value;
-                }
+                enabled: false
             }
         },
         yAxis: {
@@ -123,6 +114,9 @@ $(function(){
             labels:{
                 enabled:true
             }
+        },
+        tooltip: {
+            enabled: false
         },
         legend: {
             enabled: false
@@ -145,18 +139,15 @@ $(function(){
                 lineWidth: 2,
                 states: {
                     hover: {
-                        lineWidth: 1,
-                        halo:false
+                        enabled: false
                     }
 
                 },
                 marker: {
                     enabled: false,
-                    fillColor:'#fff',
-                    symbol: 'circle',
                     states: {
                         hover: {
-                            radius:2
+                            enabled: false
                         }
                     }
                 }

@@ -16,6 +16,7 @@
 
     <title>基金详情</title>
 </head>
+
 <body class="v1p0_jjxq_body">
     <div class="mainBox">
         <div class="dataInfor">
@@ -45,8 +46,25 @@
             <span>风险承受能力“安全型”及以上</span>
         </div>
         <div class="chartWrap">
-            <div class="title"><span>近一个月的涨幅</span><span>+3.09%</span></div>
+            <div class="title" id="chartWrap_title">
+                <div>
+                    <span>近一个月的涨幅</span><span>+3.09%</span>
+                </div>
+                <div>
+                    <span>近三个月的涨幅</span><span>+3.09%</span>
+                </div>
+                <div>
+                    <span>近半年的涨幅</span><span>+3.09%</span>
+                </div>
+                <div>
+                    <span>近一年的涨幅</span><span>+3.09%</span>
+                </div>
+            </div>
             <div class="trendBox" id="trendBox">
+            </div>
+            <div class="xAxisBox clearfix" id="xAxisBox">
+                <span>2016-06-03</span>
+                <span>2016-06-03</span>
             </div>
             <div class="tabBtnBox" id="tabBtnBox">
                 <a href="javascript:;" class="active">一个月</a>
@@ -103,13 +121,65 @@
                                 <div></div>
                             </div>
                             <ul class="pieUl">
-                                <li><span>25%</span><span>股票</span></li>
-                                <li><span>10%</span><span>债券</span></li>
-                                <li><span>40%</span><span>银行</span></li>
-                                <li><span>25%</span><span>其它</span></li>
+                                <li>
+                                    <span>25%</span>
+                                    <span>股票</span>
+                                </li>
+                                <li>
+                                    <span>10%</span>
+                                    <span>债券</span>
+                                </li>
+                                <li>
+                                    <span>40%</span>
+                                    <span>银行</span>
+                                </li>
+                                <li>
+                                    <span>25%</span>
+                                    <span>其它</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="dataListWrap">
+                            <div class="title">股票持仓</div>
+                            <div class="dataListHeader">
+                                <span>名称</span>
+                                <span>代码</span>
+                                <span>市值(万元)</span>
+                                <span>资产比例</span>
+                            </div>
+                            <!--<ul class="dataList_ul">
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                                <li>
+                                    <span>航天信息</span>
+                                    <span>600271</span>
+                                    <span>1234567.89</span>
+                                    <span>20.5%</span>
+                                </li>
+                            </ul>-->
+                            <div class="emptyBox">
+                                <i></i>
+                                <p>暂无持仓</p>
+                            </div>
+                        </div>
+                        <div class="dataListWrap">
+                            <div class="title">债券持仓</div>
                             <div class="dataListHeader">
                                 <span>名称</span>
                                 <span>代码</span>
@@ -197,13 +267,7 @@
         </div>
         <div class="jjProtocolBox">
             <p>基金销售服务由深圳宜投基金销售有限公司提供</p>
-            <p>
-                <a href="javascript:;">《投资人风险提示》</a><a href="javascript:;">《网信理财基金平台服务协议》</a>
-            </p>
         </div>
-    </div>
-    <div class="ljsg_btnBox">
-        <input type="button" value="立即申购"/>
     </div>
 </body>
 </html>
