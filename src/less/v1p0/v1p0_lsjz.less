@@ -5,7 +5,7 @@
     background-color: #EFEFF4;
   }
   .mainBox{
-    padding-bottom:30px;
+    //padding-bottom:30px;
   }
   //flex布局，左右padding值
   .reuseClass01(){
@@ -36,8 +36,18 @@
     }
     li{
       &{
-        border-bottom: 1px solid #DDDDDD;
+        //border-bottom: 1px solid #DDDDDD;
         .reuseClass01();
+      }
+      &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: -50%;
+        width: 200%;
+        height: 1px;
+        background: #DDDDDD;
+        transform:scale(0.5);
       }
       span{
         &{
@@ -60,5 +70,51 @@
       }
     }
 
+  }
+  .emptyBox{
+    &{
+      margin-top:77px;
+    }
+    i{
+      display: block;
+      margin: 0px auto;
+      .w_h_val(100px);
+      background:url("../../images/v1p0/empty_Icon.png") no-repeat;
+      background-size:100% 100%;
+    }
+    p{
+      font-size:14px;
+      color: #909090;
+      text-align: center;
+      padding-top:16px;
+    }
+  }
+  .tip_p{
+    &{
+      font-size:12px;
+      color: #CCCCCC;
+      text-align: center;
+      .h_line_h(18px);
+      padding: 5px 0px 20px 0px;
+    }
+    &.fixedBottom{
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width:100%;
+    }
+  }
+  .loadLink{
+    &{
+      .h_line_h(40px);
+      background-color: #F6F6F6;
+      display: block;
+      text-align: center;
+      font-size:14px;
+      color: #000;
+    }
+    &.noMore{
+      color: #909090;
+    }
   }
 }

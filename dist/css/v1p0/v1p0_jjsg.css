@@ -197,6 +197,17 @@
 .v1p0_jjsg_body .protocolWrap .protocolList li p a {
   color: #8FC6F2;
 }
+.v1p0_jjsg_body .arriveTimeDesBox {
+  padding: 10px 3%;
+}
+.v1p0_jjsg_body .arriveTimeDesBox p {
+  color: #A1A1A1;
+  font-size: 12px;
+  line-height: 20px;
+}
+.v1p0_jjsg_body .arriveTimeDesBox + .btnWrap {
+  margin-top: 0px;
+}
 .v1p0_jjsg_body .btnWrap {
   padding: 0px 3%;
   margin-top: 20px;

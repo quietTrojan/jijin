@@ -289,6 +289,19 @@
 .v1p0_jjxq_body .jjTabWrap .tabContWrap .tabContItem .gk_ul li span:nth-of-type(2) {
   float: right;
 }
+.v1p0_jjxq_body .jjTabWrap .tabContWrap .loadLink {
+  height: 40px;
+  line-height: 40px;
+  background-color: #F6F6F6;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  border-top: 1px solid #efefef;
+}
+.v1p0_jjxq_body .jjTabWrap .tabContWrap .loadLink.noMore {
+  color: #909090;
+}
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .pieWrap {
   display: -webkit-box;
   display: -ms-flexbox;

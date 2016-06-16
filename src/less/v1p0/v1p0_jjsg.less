@@ -86,14 +86,17 @@
           padding-right:12px;
           background:url("../../images/v1p0/link_right_bg.png") no-repeat right center;
           background-size:auto 10px;
+          .inline_block_Box(14px);
         }
-        span:nth-of-type(1){
+
+        span:first-child{
           color: #909090;
           text-decoration: line-through;
         }
-        span:nth-of-type(2){
+        span:last-child{
           color: #FF9800;
           margin-left:5px;
+          text-decoration:none;
         }
       }
     }
@@ -192,16 +195,31 @@
       }
     }
   }
+  .arriveTimeDesBox{
+    &{
+      padding: 10px 3%;
+    }
+    p{
+      color: #A1A1A1;
+      font-size:12px;
+      line-height: 20px;
+    }
+    &+.btnWrap{
+      margin-top:0px;
+    }
+  }
   .btnWrap{
     &{
       padding:0px 3%;
-      margin-top:85px;
+      margin-top:20px;
     }
     .submitBtn{
       &{
         display: block;
         width:100%;
         height: 40px;
+        line-height: 40px;
+        text-align: center;
         font-size:16px;
         color: #ffffff;
         background-color: #EE4634;
@@ -234,7 +252,7 @@
     }
     .contBox{
       &{
-        padding: 0px 7% 20px 7%;
+        padding: 0px 5% 20px 5%;
         text-align: center;
       }
       .header{
@@ -242,8 +260,11 @@
           display: flex;
           padding: 25px 0px 10px 0px;
         }
-        span{
-          flex: 1;
+        span:nth-of-type(1){
+          flex: 3;
+        }
+        span:nth-of-type(2){
+          flex: 2;
         }
       }
       .rate_list_ul{
@@ -256,13 +277,16 @@
             margin-top:0px;
           }
           p{
-            flex:1;
             .h_line_h(44px);
             background-color: #EBEBEB;
             color: #000;
           }
+          p:nth-of-type(1){
+            flex: 3;
+          }
           p:nth-of-type(2){
             &{
+              flex: 2;
               margin-left:1px;
               font-size:0px;
             }
@@ -302,8 +326,9 @@
 /* 媒体查询 begin */
 @media screen and @iphone4Query {
   .v1p0_jjsg_body{
-    .btnWrap{
-      margin-top:30px;
+    .ratePopBox{
+      left: 5%;
+      width: 90%;
     }
   }
 }

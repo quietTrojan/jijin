@@ -5,7 +5,7 @@
     background-color: #EFEFF4;
   }
   .mainBox{
-    padding-bottom:50px;
+    //padding-bottom:50px;
   }
   .dataInfor{
     &{
@@ -137,8 +137,17 @@
     &{
       background-color: #fff;
       margin-top:10px;
+      padding-bottom:12px;
     }
     .title{
+      >div{
+        &{
+          display: none;
+        }
+        &:first-child{
+          display: block;
+        }
+      }
       &{
         padding-right:15px;
         text-align: right;
@@ -160,6 +169,19 @@
       &{
         height: 200px;
         padding-right:10px;
+      }
+    }
+    .xAxisBox{
+      &{
+        font-size:12px;
+        color: #909090;
+        padding:0px 10px 5px 40px;
+      }
+      span:nth-of-type(1){
+        float:left;
+      }
+      span:nth-of-type(2){
+        float:right;
       }
     }
     .tabBtnBox{
@@ -192,7 +214,8 @@
         color: #8FC6F2;
         display: block;
         text-align: center;
-        padding: 12px 0px;
+        .h_line_h(20px);
+        margin-top:12px;
       }
       span{
         display: inline-block;
@@ -274,6 +297,20 @@
           }
         }
       }
+      .loadLink{
+        &{
+          .h_line_h(40px);
+          background-color: #F6F6F6;
+          display: block;
+          text-align: center;
+          font-size:14px;
+          color: #000;
+          border-top: 1px solid #efefef;
+        }
+        &.noMore{
+          color: #909090;
+        }
+      }
     }
     .chongcangBox{
       .pieWrap{
@@ -324,11 +361,15 @@
               padding-left:15px;
               position: relative;
               margin-top:15px;
+              font-size:0px;
             }
             &:first-child{
               margin-top:7px;
             }
             span{
+              &{
+                font-size:14px;
+              }
               &:nth-of-type(1){
                 margin-right:10px;
               }
@@ -380,6 +421,9 @@
         }
       }
       .dataListWrap{
+        &{
+          border-top:10px solid #EFEFF4;
+        }
         .reuseClass01{
           &{
 
@@ -398,6 +442,11 @@
           &:nth-of-type(4){
             flex: 2;
           }
+        }
+        .title{
+          .h_line_h(36px);
+          color: #000;
+          padding-left:15px;
         }
         .dataListHeader{
           &{
@@ -425,6 +474,27 @@
               .reuseClass01;
               color: #000000;
             }
+          }
+        }
+        .emptyBox{
+          &{
+            height: 140px;
+            box-sizing: border-box;
+            padding-top:37px;
+          }
+          i{
+            display: block;
+            margin: 0px auto;
+            width:36px;
+            height: 40px;
+            background:url("../../images/v1p0/empty_Icon01.png") 0px 0px no-repeat;
+            background-size:100% 100%;
+          }
+          p{
+            font-size:14px;
+            color: #909090;
+            text-align: center;
+            padding-top:12px;
           }
         }
       }
@@ -491,7 +561,7 @@
     &{
       font-size:12px;
       text-align: center;
-      padding: 10px 0px;
+      padding: 20px 0px 10px 0px;
     }
     p{
       &{
@@ -503,27 +573,6 @@
       a{
         color: #8FC6F2;
       }
-    }
-  }
-  .ljsg_btnBox{
-    &{
-      background-color: #fff;
-      position: fixed;
-      left:0px;
-      bottom: 0px;
-      width:100%;
-      z-index: 2;
-      padding: 5px 0px;
-    }
-    input[type="button"]{
-      height: 40px;
-      width:94%;
-      display: block;
-      margin: 0px auto;
-      background-color: #EE4634;
-      font-size:16px;
-      color: #ffffff;
-      border-radius:3px;
     }
   }
 }
