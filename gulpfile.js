@@ -12,7 +12,7 @@ function handleError(err) {
     this.emit('end');
 }
 
-//定义一个testLess任务（自定义任务名称）
+//定义一个testLess任务（自定义任务名称）,将less编译为css，并加上兼容前缀
 gulp.task('less_css', function () {
     return gulp.src(['src/less/**/*','!src/less/reuseClass.less']) //该任务针对的文件
         .pipe(less()).on('error', handleError)
