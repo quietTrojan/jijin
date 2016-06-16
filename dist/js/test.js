@@ -8,3 +8,14 @@ var url = '/jijin_v1.0/dist/xieyi.html';
 
 history.pushState(state, title, url);
 */
+$(function(){
+    var numInput=$('#numInput');
+    numInput.on({
+        'focus':function(){
+           $(this).attr('type','number');
+        },
+        'blur':function(){
+            $(this).attr('type','text');
+        }
+    })
+});
