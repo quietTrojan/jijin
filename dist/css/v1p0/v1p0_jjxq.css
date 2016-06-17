@@ -225,6 +225,20 @@
   margin-top: 10px;
   background-color: #fff;
 }
+.v1p0_jjxq_body .jjTabWrap .emptyBox i {
+  display: block;
+  margin: 0px auto;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/v1p0/empty_Icon.png") no-repeat;
+  background-size: 100% 100%;
+}
+.v1p0_jjxq_body .jjTabWrap .emptyBox p {
+  font-size: 14px;
+  color: #A1A1A1;
+  text-align: center;
+  padding-top: 16px;
+}
 .v1p0_jjxq_body .jjTabWrap .tabHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +265,9 @@
 }
 .v1p0_jjxq_body .jjTabWrap .tabContWrap .tabContItem:first-child {
   display: block;
+}
+.v1p0_jjxq_body .jjTabWrap .tabContWrap .tabContItem .emptyBox {
+  padding: 70px 0px;
 }
 .v1p0_jjxq_body .jjTabWrap .tabContWrap .tabContItem .gk_ul {
   padding: 0px 5%;

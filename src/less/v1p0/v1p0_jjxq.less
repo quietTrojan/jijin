@@ -232,6 +232,24 @@
       margin-top:10px;
       background-color: #fff;
     }
+    .emptyBox{
+      &{
+        //margin-top:77px;
+      }
+      i{
+        display: block;
+        margin: 0px auto;
+        .w_h_val(100px);
+        background:url("../../images/v1p0/empty_Icon.png") no-repeat;
+        background-size:100% 100%;
+      }
+      p{
+        font-size:14px;
+        color: #A1A1A1;
+        text-align: center;
+        padding-top:16px;
+      }
+    }
     .tabHeader{
       &{
         display: flex;
@@ -259,6 +277,9 @@
         }
         &:first-child{
           display: block;
+        }
+        .emptyBox{
+          padding: 70px 0px;
         }
         .gk_ul{
           &{
