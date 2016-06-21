@@ -294,13 +294,13 @@
   width: 0px;
 }
 .v1p0_jjsg_body .ratePopBox .contBox .rate_list_ul li p:nth-of-type(2) {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  -ms-flex-negative: 3;
-      flex-shrink: 3;
-  -ms-flex-positive: 3;
-      flex-grow: 3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   width: 0px;
   margin-left: 1px;
   font-size: 0px;
