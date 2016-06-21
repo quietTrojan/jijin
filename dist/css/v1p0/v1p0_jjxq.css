@@ -51,6 +51,9 @@
   height: 40px;
   line-height: 40px;
 }
+.v1p0_jjxq_body .dataInforInner .ftDiv p.gray_p {
+  color: #909090;
+}
 .v1p0_jjxq_body .dataInforInner .tdDiv {
   -webkit-box-flex: 2;
       -ms-flex: 2;

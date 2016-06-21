@@ -74,6 +74,9 @@
 .v1p0_lsjz_body .list_ul li span.span_green {
   color: #81CA9C;
 }
+.v1p0_lsjz_body .list_ul li span.span_gray {
+  color: #909090;
+}
 .v1p0_lsjz_body .emptyBox {
   margin-top: 77px;
 }
