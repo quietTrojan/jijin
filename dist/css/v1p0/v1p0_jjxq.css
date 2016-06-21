@@ -425,6 +425,8 @@
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .reuseClass01 {
   text-align: right;
+  box-sizing: border-box;
+  display: block;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .reuseClass01:nth-of-type(1) {
   text-align: left;
@@ -436,14 +438,17 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding-right: 10px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .reuseClass01:nth-of-type(3) {
-  -ms-flex-preferred-size: 70px;
-      flex-basis: 70px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .reuseClass01:nth-of-type(4) {
-  -ms-flex-preferred-size: 60px;
-      flex-basis: 60px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .title {
   height: 36px;
@@ -462,6 +467,8 @@
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataListHeader span {
   text-align: right;
+  box-sizing: border-box;
+  display: block;
   color: #909090;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataListHeader span:nth-of-type(1) {
@@ -474,14 +481,17 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding-right: 10px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataListHeader span:nth-of-type(3) {
-  -ms-flex-preferred-size: 70px;
-      flex-basis: 70px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataListHeader span:nth-of-type(4) {
-  -ms-flex-preferred-size: 60px;
-      flex-basis: 60px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataList_ul {
   padding: 8px 0px;
@@ -496,6 +506,8 @@
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataList_ul li span {
   text-align: right;
+  box-sizing: border-box;
+  display: block;
   color: #000000;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataList_ul li span:nth-of-type(1) {
@@ -508,14 +520,17 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding-right: 10px;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataList_ul li span:nth-of-type(3) {
-  -ms-flex-preferred-size: 70px;
-      flex-basis: 70px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .dataList_ul li span:nth-of-type(4) {
-  -ms-flex-preferred-size: 60px;
-      flex-basis: 60px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .v1p0_jjxq_body .jjTabWrap .chongcangBox .dataListWrap .emptyBox {
   height: 140px;
@@ -597,4 +612,9 @@
   color: #8FC6F2;
 }
 /* 媒体查询 begin */
+@media screen and (max-width: 320px) {
+  .dataList_ul li span {
+    font-size: 12px;
+  }
+}
 /* 媒体查询 end */
