@@ -25,7 +25,8 @@
         padding-bottom:15px;
       }
       label{
-        flex-basis: 30px;
+        width: 30px;
+        display: block;
         font-size:26px;
         color: #000;
         box-sizing: border-box;
@@ -34,12 +35,14 @@
       }
       .moneyInput{
         &{
+          display: block;
           flex: 1;
           font-size:20px;
           height: 40px;
           box-sizing: border-box;
           line-height: 32px;
           padding:4px 0px;
+          width:0px;
         }
         &::placeholder{
           color: #CCCCCC;
@@ -282,11 +285,11 @@
             color: #000;
           }
           p:nth-of-type(1){
-            flex: 3;
+            .flexRatio(3);
           }
           p:nth-of-type(2){
             &{
-              flex: 2;
+              .flexRatio(3);
               margin-left:1px;
               font-size:0px;
             }
