@@ -52,6 +52,10 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   display: block;
   height: 50px;
   line-height: 50px;
