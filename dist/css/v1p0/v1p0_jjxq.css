@@ -35,8 +35,7 @@
 }
 .v1p0_jjxq_body .dataInforInner .sepDiv {
   background-color: #D9D9D9;
-  -ms-flex-preferred-size: 1px;
-      flex-basis: 1px;
+  width: 1px;
   height: 40px;
   margin-top: 15px;
 }
@@ -47,12 +46,21 @@
 }
 .v1p0_jjxq_body .dataInforInner .ftDiv p {
   font-size: 32px;
-  color: #EE4634;
   height: 40px;
   line-height: 40px;
 }
+.v1p0_jjxq_body .dataInforInner .ftDiv p.red_p {
+  color: #EE4634;
+}
 .v1p0_jjxq_body .dataInforInner .ftDiv p.gray_p {
   color: #909090;
+}
+.v1p0_jjxq_body .dataInforInner .ftDiv p.span_green {
+  color: #81CA9C;
+}
+.v1p0_jjxq_body .dataInforInner .ftDiv p span {
+  font-size: 14px;
+  margin-left: 5px;
 }
 .v1p0_jjxq_body .dataInforInner .tdDiv {
   -webkit-box-flex: 2;

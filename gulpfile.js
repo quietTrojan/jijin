@@ -36,14 +36,18 @@ gulp.task('imagemin', function(){
 //gulp.task('default', ['concat_js','less_css','file_include']);
 
  /*gulp.task('styleInject',['less_css'],function () {
-    gulp.src(['src/htmlTemplate/404.html'])
+    gulp.src(['src/htmlTel/error.html'])
         .pipe(styleInject())
-        .pipe(gulp.dest("build/"));
+        .pipe(gulp.dest("dist/"));
 });*/
 
 gulp.task('watch', function () {
-    var watcher = gulp.watch(['src/**/*',], ['less_css']);
-    watcher.on('change', function(event) {
+    var watcher01 = gulp.watch(['src/**/*',], ['less_css']);
+    watcher01.on('change', function(event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
+    /*var watcher02 = gulp.watch(['src/htmlTel/error.html'],['styleInject']);
+    watcher02.on('change', function(event) {
+        console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });*/
 });

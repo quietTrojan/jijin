@@ -22,12 +22,15 @@
 }
 .testBox span:nth-of-type(1) {
   background-color: red;
+  max-width: 60px;
 }
 .testBox span:nth-of-type(2) {
   background-color: yellow;
+  max-width: 60px;
 }
 .testBox span:nth-of-type(3) {
   background-color: blue;
+  max-width: 300px;
 }
 .pieWrap {
   display: -webkit-box;
@@ -41,30 +44,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 0;
 }
-.pieWrap .pieBox div:nth-of-type(1) {
+.pieWrap .pieBox::before {
+  display: block;
+  content: "";
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
-.pieWrap .pieBox div:nth-of-type(2) {
-  -ms-flex-preferred-size: 140px;
-      flex-basis: 140px;
-  width: 0;
-  height: 140px;
-  background-color: yellow;
-}
-.pieWrap .pieBox div:nth-of-type(3) {
+.pieWrap .pieBox::after {
+  display: block;
+  content: "";
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.pieWrap .pieBox div {
+  width: 140px;
+  height: 140px;
+  background-color: yellow;
 }
 .pieWrap .textBox {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  width: 0;
   min-width: 150px;
   background-color: blue;
 }
