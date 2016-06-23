@@ -263,6 +263,10 @@
           display: flex;
           padding: 25px 0px 10px 0px;
         }
+        span{
+          width: 0;
+          display: block;
+        }
         span:nth-of-type(1){
           flex: 3;
         }
@@ -337,11 +341,16 @@
   }
 }
 /* 媒体查询 begin */
-@media screen and @iphone4Query {
+@media screen and @iphone6-Query {
   .v1p0_jjsg_body{
     .ratePopBox{
-      left: 5%;
-      width: 90%;
+      &{
+        left: 3%;
+        width: 94%;
+      }
+      .contBox{
+        padding: 0px 3% 20px 3%;
+      }
     }
   }
 }

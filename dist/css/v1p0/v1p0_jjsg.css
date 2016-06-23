@@ -258,6 +258,10 @@
   display: flex;
   padding: 25px 0px 10px 0px;
 }
+.v1p0_jjsg_body .ratePopBox .contBox .header span {
+  width: 0;
+  display: block;
+}
 .v1p0_jjsg_body .ratePopBox .contBox .header span:nth-of-type(1) {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -339,10 +343,13 @@
   padding: 20px 0px 10px 0px;
 }
 /* 媒体查询 begin */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 374px) {
   .v1p0_jjsg_body .ratePopBox {
-    left: 5%;
-    width: 90%;
+    left: 3%;
+    width: 94%;
+  }
+  .v1p0_jjsg_body .ratePopBox .contBox {
+    padding: 0px 3% 20px 3%;
   }
 }
 /* 媒体查询 end */
