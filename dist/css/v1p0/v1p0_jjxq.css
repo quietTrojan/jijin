@@ -695,7 +695,7 @@
   color: #8FC6F2;
 }
 /* 媒体查询 begin */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 374px) {
   .v1p0_jjxq_body .dataList_ul li span {
     font-size: 12px;
   }
