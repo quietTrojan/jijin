@@ -284,7 +284,9 @@
             margin-top:0px;
           }
           p{
-            .h_line_h(44px);
+            padding: 12px 0px;
+            min-height: 20px;
+            line-height: 20px;
             background-color: #EBEBEB;
             color: #000;
           }
@@ -295,16 +297,23 @@
             &{
               .flexRatio(2);
               margin-left:1px;
-              font-size:0px;
+              //font-size:0px;
+              //.inline_block_Box(14px);
+              display: flex;
+              flex-wrap:wrap;
+              justify-content:center;
             }
             span{
               &{
-                font-size:14px;
+                /*display: inline-block;
+                min-width: 50%;*/
+                display: block;
+                padding: 0px 3px;
               }
               &:first-child{
                 color: #909090;
                 text-decoration: line-through;
-                margin-right:5px;
+                //margin-right:5px;
               }
               &:last-child{
                 color: #000;
