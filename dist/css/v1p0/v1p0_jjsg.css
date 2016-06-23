@@ -322,6 +322,7 @@
   /*display: inline-block;
                 min-width: 50%;*/
   display: inline-block;
+  vertical-align: top;
   padding: 0px 3px;
 }
 .v1p0_jjsg_body .ratePopBox .contBox .rate_list_ul li p:nth-of-type(2) span:first-child {
