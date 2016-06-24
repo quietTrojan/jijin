@@ -96,14 +96,14 @@
   height: 25px;
   line-height: 25px;
   font-size: 25px;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 .num_keyBoardBox .panel .lineItme .cellItem span:nth-of-type(2) {
   height: 14px;
   line-height: 14px;
   font-size: 10px;
   text-transform: uppercase;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 .num_keyBoardBox .panel .lineItme .cellItem span.zero,
 .num_keyBoardBox .panel .lineItme .cellItem span.dit {
