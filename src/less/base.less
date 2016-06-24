@@ -116,5 +116,172 @@ table{
 }
 /* css 重置 end */
 
+/* HTML5数字键盘输入框 begin */
+.keyBoardInput{
+  &{
+    //display: inline-flex;
+  }
+  span{
+    &{
+      display: block;
+    }
+    &:nth-of-type(2){
+      display: none;
+      color: #CCCCD5;
+    }
+    &:nth-of-type(3){
+      width:1px;
+      height: 100%;
+      background-color: #000;
+      animation:cursorBlink 1s infinite linear;
+      visibility: hidden;
+    }
+  }
+}
+@keyframes cursorBlink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  50.01%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes cursorClick{
+  0%{
+    background-color: #D1D5DB;
+  }
+  100%{
+    background-color: transparent;
+  }
+}
+/* HTML5模拟数字键盘 */
+.num_keyBoardBox{
+  &{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width:100%;
+    display:none;
+    z-index: 999;
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  a{
+    text-decoration: none;
+  }
+  .header{
+    &{
+      background-color: #F9F9F9;
+      text-align: right;
+    }
+    .okBtn{
+      display: inline-block;
+      vertical-align: top;
+      height: 40px;
+      line-height: 40px;
+      color: #0B7BFF;
+      font-size:14px;
+      font-weight: bold;
+      padding: 0px 13px;
+    }
+  }
+  .panel{
+    &{
+      background-color: #fff;
+    }
+    .lineItme{
+      &{
+        display: flex;
+      }
+      &:first-child{
+        .cellItem::before{
+          display: none;
+        }
+      }
+      .cellItem{
+        &{
+          flex:1;
+          width: 0;
+          //height: 45px;
+          box-sizing: border-box;
+          text-align: center;
+          position: relative;
+          /*border-top:1px solid #B8B8B8;
+          border-left:1px solid #B8B8B8;*/
+        }
+        &.aniRun{
+          animation:cursorClick 0.4s linear;
+        }
+        &::before,&::after{
+          position: absolute;
+          content: "";
+          transform:scale(0.5);
+          background-color: #B8B8B8;
+        }
+        &::before{
+          width: 200%;
+          height: 1px;
+          left: -50%;
+          top: 0px;
+        }
+        &::after{
+          height: 200%;
+          width: 1px;
+          top: -50%;
+          left: 0px;
+        }
+        &:first-child::after{
+          display: none;
+        }
+        &.operator{
+          background-color:#D1D5DB ;
+        }
+        &.del{
+          background: url("../images/v1p0/keyboard_del.png") #D1D5DB center center no-repeat;
+          background-size: auto 16px;
+        }
+        span{
+          &{
+            display: block;
+            color: #000;
+          }
+          &:nth-of-type(1){
+            height: 25px;
+            line-height: 25px;
+            font-size:25px;
+            //font-weight: bold;
+            //color: #000;
+            padding-top:4px;
+          }
+          &:nth-of-type(2){
+            height: 14px;
+            line-height: 14px;
+            font-size:10px;
+            text-transform: uppercase;
+            padding-bottom:2px;
+          }
+          &.zero,&.dit{
+            height: 45px;
+            line-height: 45px;
+            padding-top:0px;
+          }
+        }
+      }
+    }
+  }
+}
+.num_keyBoardEmpty{
+  display: none;
+}
+
 
 

@@ -33,7 +33,9 @@
   line-height: 40px;
 }
 .v1p0_jjsg_body .payWrap .moneyWrap .moneyInput {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

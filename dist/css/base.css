@@ -120,3 +120,176 @@ table {
   text-align: left;
 }
 /* css 重置 end */
+/* HTML5数字键盘输入框 begin */
+.keyBoardInput span {
+  display: block;
+}
+.keyBoardInput span:nth-of-type(2) {
+  display: none;
+  color: #CCCCD5;
+}
+.keyBoardInput span:nth-of-type(3) {
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  -webkit-animation: cursorBlink 1s infinite linear;
+          animation: cursorBlink 1s infinite linear;
+  visibility: hidden;
+}
+@-webkit-keyframes cursorBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cursorBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cursorClick {
+  0% {
+    background-color: #D1D5DB;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes cursorClick {
+  0% {
+    background-color: #D1D5DB;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+/* HTML5模拟数字键盘 */
+.num_keyBoardBox {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: none;
+  z-index: 999;
+}
+.num_keyBoardBox * {
+  margin: 0px;
+  padding: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.num_keyBoardBox a {
+  text-decoration: none;
+}
+.num_keyBoardBox .header {
+  background-color: #F9F9F9;
+  text-align: right;
+}
+.num_keyBoardBox .header .okBtn {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  line-height: 40px;
+  color: #0B7BFF;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 13px;
+}
+.num_keyBoardBox .panel {
+  background-color: #fff;
+}
+.num_keyBoardBox .panel .lineItme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.num_keyBoardBox .panel .lineItme:first-child .cellItem::before {
+  display: none;
+}
+.num_keyBoardBox .panel .lineItme .cellItem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  /*border-top:1px solid #B8B8B8;
+          border-left:1px solid #B8B8B8;*/
+}
+.num_keyBoardBox .panel .lineItme .cellItem.aniRun {
+  -webkit-animation: cursorClick 0.4s linear;
+          animation: cursorClick 0.4s linear;
+}
+.num_keyBoardBox .panel .lineItme .cellItem::before,
+.num_keyBoardBox .panel .lineItme .cellItem::after {
+  position: absolute;
+  content: "";
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  background-color: #B8B8B8;
+}
+.num_keyBoardBox .panel .lineItme .cellItem::before {
+  width: 200%;
+  height: 1px;
+  left: -50%;
+  top: 0px;
+}
+.num_keyBoardBox .panel .lineItme .cellItem::after {
+  height: 200%;
+  width: 1px;
+  top: -50%;
+  left: 0px;
+}
+.num_keyBoardBox .panel .lineItme .cellItem:first-child::after {
+  display: none;
+}
+.num_keyBoardBox .panel .lineItme .cellItem.operator {
+  background-color: #D1D5DB ;
+}
+.num_keyBoardBox .panel .lineItme .cellItem.del {
+  background: url("../images/v1p0/keyboard_del.png") #D1D5DB center center no-repeat;
+  background-size: auto 16px;
+}
+.num_keyBoardBox .panel .lineItme .cellItem span {
+  display: block;
+  color: #000;
+}
+.num_keyBoardBox .panel .lineItme .cellItem span:nth-of-type(1) {
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  padding-top: 4px;
+}
+.num_keyBoardBox .panel .lineItme .cellItem span:nth-of-type(2) {
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+.num_keyBoardBox .panel .lineItme .cellItem span.zero,
+.num_keyBoardBox .panel .lineItme .cellItem span.dit {
+  height: 45px;
+  line-height: 45px;
+  padding-top: 0px;
+}
+.num_keyBoardEmpty {
+  display: none;
+}

@@ -10,6 +10,59 @@
   margin: 20px auto;
   outline: none;
 }
+.ceshiBox{
+  p{
+    margin-top:20px;
+  }
+}
+/* HTML5数字键盘输入框 begin */
+.keyBoardInput{
+  &{
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #c8c8c8;
+    margin: 20px 0px 0px 20px;
+    display: inline-flex;
+    min-width: 100px;
+  }
+  span{
+    &{
+      display: block;
+    }
+    &:nth-of-type(2){
+      display: none;
+    }
+    &:nth-of-type(3){
+      width:1px;
+      height: 100%;
+      background-color: #000;
+      animation:cursorBlink 1s infinite linear;
+      visibility: hidden;
+    }
+  }
+}
+@keyframes cursorBlink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  50.01%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes cursorClick{
+  0%{
+    background-color: #D1D5DB;
+  }
+  100%{
+    background-color: transparent;
+  }
+}
 /* HTML5模拟数字键盘 */
 .num_keyBoardBox{
   &{
@@ -17,6 +70,8 @@
     left: 0px;
     bottom: 0px;
     width:100%;
+    display:none;
+    z-index: 999;
   }
   *{
     margin: 0px;
@@ -43,6 +98,9 @@
     }
   }
   .panel{
+    &{
+      background-color: #fff;
+    }
     .lineItme{
       &{
         display: flex;
@@ -62,6 +120,9 @@
           position: relative;
           /*border-top:1px solid #B8B8B8;
           border-left:1px solid #B8B8B8;*/
+        }
+        &.aniRun{
+          animation:cursorClick 0.4s linear;
         }
         &::before,&::after{
           position: absolute;
@@ -114,9 +175,13 @@
           &.zero,&.dit{
             height: 45px;
             line-height: 45px;
+            padding-top:0px;
           }
         }
       }
     }
   }
+}
+.num_keyBoardEmpty{
+  display: none;
 }
