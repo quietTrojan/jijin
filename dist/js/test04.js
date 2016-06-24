@@ -1,6 +1,5 @@
 $(function(){
-    $('#textInput').on('input',function(){
-        var inputVal=$(this).val();
-        $(this).val(inputVal.replace(/\D*/g,""));
+    $('#textInput').on('click',function(){
+        console.log($('#text_p').attr('data-name-text','nihao'));
     });
 });
