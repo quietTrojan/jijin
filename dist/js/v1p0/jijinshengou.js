@@ -2,7 +2,8 @@ $(function(){
     var ratePopBox=$('#ratePopBox');
     var maskDiv=$('#maskDiv');
     $('#rateWrap').on('click',function(){
-        maskDiv.add(ratePopBox).show();
+        //maskDiv.add(ratePopBox).show();
+        alert($(window).height()+'*'+$(window).width());
     });
     $('#btn_know').on('click',function(){
         maskDiv.add(ratePopBox).hide();
