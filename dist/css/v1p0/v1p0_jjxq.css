@@ -696,6 +696,12 @@
 }
 /* 媒体查询 begin */
 @media screen and (max-width: 374px) {
+  .v1p0_jjxq_body .dataInforInner .ftDiv p span {
+    margin-left: 0px;
+  }
+  .v1p0_jjxq_body .dataInforInner .tdDiv {
+    padding-left: 5px;
+  }
   .v1p0_jjxq_body .dataList_ul li span {
     font-size: 12px;
   }
